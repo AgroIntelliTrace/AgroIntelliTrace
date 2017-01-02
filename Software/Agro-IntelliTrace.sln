@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agro-IntelliTrace", "Agro-IntelliTrace\Agro-IntelliTrace.csproj", "{9E0AD650-D7EF-4225-A3B1-C86093586710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapadeDatos", "CapadeDatos\CapadeDatos.csproj", "{3124A3D4-C326-4EAF-8926-EF7A29ABDA85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E0AD650-D7EF-4225-A3B1-C86093586710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0AD650-D7EF-4225-A3B1-C86093586710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0AD650-D7EF-4225-A3B1-C86093586710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0AD650-D7EF-4225-A3B1-C86093586710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3124A3D4-C326-4EAF-8926-EF7A29ABDA85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3124A3D4-C326-4EAF-8926-EF7A29ABDA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3124A3D4-C326-4EAF-8926-EF7A29ABDA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3124A3D4-C326-4EAF-8926-EF7A29ABDA85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
