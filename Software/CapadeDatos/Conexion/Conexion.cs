@@ -75,19 +75,19 @@ namespace CapadeDatos
         /// <param name="parametro"></param>
         /// <param name="valor"></param>
 
-        private void TipoDato(CapaDatosAvotrace.EnumTipoDato tipo, ref SqlParameter parametro, CapaDatosAvotrace.TipoDato valor) 
+        private void TipoDato(EnumTipoDato tipo, ref SqlParameter parametro, TipoDato valor) 
         {
             TipoDato(tipo, ref parametro, valor, 1);
         }
-        private void TipoDato(CapaDatosAvotrace.EnumTipoDato tipo, ref SqlParameter parametro, CapaDatosAvotrace.TipoDato valor,int ConvertirMayuscula)
+        private void TipoDato(EnumTipoDato tipo, ref SqlParameter parametro, TipoDato valor,int ConvertirMayuscula)
         {
-            if (tipo == CapaDatosAvotrace.EnumTipoDato.Tipodecimal)
+            if (tipo == CapadeDatos.EnumTipoDato.Tipodecimal)
             {
 		        parametro.SqlDbType = SqlDbType.Decimal;
 		        parametro.Value = valor.DecimalValor;
 	        }
 
-            if (tipo == CapaDatosAvotrace.EnumTipoDato.CadenaTexto)
+            if (tipo == CapadeDatos.EnumTipoDato.CadenaTexto)
             {
                 TextInfo ti = CultureInfo.CurrentCulture.TextInfo;
 
@@ -101,24 +101,24 @@ namespace CapadeDatos
                     parametro.Value = valor.CadenaTexto;
                 }
 	        }
-            if (tipo == CapaDatosAvotrace.EnumTipoDato.Entero)
+            if (tipo == EnumTipoDato.Entero)
             {
 		        parametro.SqlDbType = SqlDbType.Int;
 		        parametro.Value = valor.Entero;
 	        }
-            if (tipo == CapaDatosAvotrace.EnumTipoDato.Fecha)
+            if (tipo == EnumTipoDato.Fecha)
             {
 		        parametro.SqlDbType = SqlDbType.DateTime;
 		        parametro.Value = valor.FechaYHora;
 	        }
 
-            if (tipo == CapaDatosAvotrace.EnumTipoDato.Boleano )
+            if (tipo == EnumTipoDato.Boleano )
             {
                 parametro.SqlDbType = SqlDbType.Bit ;
                 parametro.Value = valor.BoleanoValor ;
             }
 
-            if (tipo == CapaDatosAvotrace.EnumTipoDato.imagen)
+            if (tipo == EnumTipoDato.imagen)
             {
                 parametro.SqlDbType = SqlDbType.Image;
                 parametro.Value = valor.ImagenValor;
@@ -136,12 +136,12 @@ namespace CapadeDatos
 
        }
 
-       public void agregarParametro(CapaDatosAvotrace.EnumTipoDato tipo, CapaDatosAvotrace.TipoDato valor, string nombre)
+       public void agregarParametro(EnumTipoDato tipo, TipoDato valor, string nombre)
        {
            agregarParametro(tipo, valor, nombre, 1);
        }
 
-       public void agregarParametro(CapaDatosAvotrace.EnumTipoDato tipo, CapaDatosAvotrace.TipoDato valor, string nombre, int ConvertirMayuscula)
+       public void agregarParametro(EnumTipoDato tipo, TipoDato valor, string nombre, int ConvertirMayuscula)
        {
 	        Exito = true;
 	        try {
