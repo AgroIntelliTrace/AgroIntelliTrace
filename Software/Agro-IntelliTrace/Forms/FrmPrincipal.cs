@@ -13,6 +13,7 @@ namespace Agro_IntelliTrace
 {
     public partial class FrmPrincipal : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        public int IdUsuario { get; set; }
         public FrmPrincipal()
         {
             InitializeComponent();

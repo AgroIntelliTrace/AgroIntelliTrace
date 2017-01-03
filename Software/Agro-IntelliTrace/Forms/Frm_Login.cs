@@ -45,35 +45,24 @@ namespace Agro_IntelliTrace
                         {
                             vIdUsuario = Convert.ToInt32(sLogin.Datos.Rows[0][0].ToString());
                             vIdPerfil = Convert.ToInt32(sLogin.Datos.Rows[0][3].ToString());
-                            //if (Convert.ToBoolean(sLogin.Datos.Rows[0][2].ToString()))
-                            //{
-                            //    txtPass.Enabled = false;
-                            //    txtRecPass.Visible = true;
-                            //    txtConfimPass.Visible = true;
-                            //    lblRecupera.Visible = true;
-                            //    lblConfirma.Visible = true;
-                            //    btnAcceso.Text = "Cambiar";
-                            //    txtRecPass.Focus();
-                            //}
-                            //else
-                            //{
-                                Frm_Principal frmP = new Frm_Principal() {IdUsuario = vIdUsuario};
-                                sLogin.IdUsuario = vIdUsuario;
-                                //sLogin.MtdModificarUsuarioFechaAcceso();
-                                if (sLogin.Exito)
+
+                            FrmPrincipal frmP = new FrmPrincipal() { IdUsuario = vIdUsuario };
+                            sLogin.IdUsuario = vIdUsuario;
+                            //sLogin.MtdModificarUsuarioFechaAcceso();
+                            if (sLogin.Exito)
+                            {
+                                MSRegistro RegIn = new MSRegistro();
+                                if (cERecordarContrasenia.Checked)
                                 {
-                                    MSRegistro RegIn = new MSRegistro();
-                                    if (cERecordarContrasenia.Checked)
-                                    {
-                                        RegIn.SaveSetting("Avotrace", "Login", "Email", txtUser.Text);
-                                    }else
-                                    {
-                                        RegIn.SaveSetting("Avotrace", "Login", "Email", "");
-                                    }
-                                    frmP.Show();
-                                    this.Hide();
+                                    RegIn.SaveSetting("Agro_IntelliTrace", "Login", "Email", txtUser.Text);
                                 }
-                            //}
+                                else
+                                {
+                                    RegIn.SaveSetting("Agro_IntelliTrace", "Login", "Email", "");
+                                }
+                                frmP.Show();
+                                this.Hide();
+                            }
                         }
                         else
                         {
@@ -84,33 +73,6 @@ namespace Agro_IntelliTrace
                 else
                 {
                     XtraMessageBox.Show("Faltan Datos por Capturar Usuario y/o Password");
-                }
-            }
-            else
-            {
-                if (txtUser.Text != string.Empty)
-                {
-                    if (txtRecPass.Text != string.Empty && txtConfimPass.Text != string.Empty)
-                    {
-                        if(txtRecPass.Text==txtConfimPass.Text)
-                        {
-                            Crypto Encrip = new Crypto();
-                            SEG_Login sLogin = new SEG_Login() { IdUsuario = vIdUsuario, Contrasenia = Encrip.Encriptar(txtRecPass.Text), IsRestablecerContrasenia = 0 };
-                            sLogin.MtdModificarUsuarioRestablecerContrasenia();
-                            if(sLogin.Exito)
-                            {
-                                Application.Restart();
-                            }
-                        }
-                        else
-                        {
-                            XtraMessageBox.Show("Recuparar Password y Confirmar Password no son Iguales");
-                        }
-                    }
-                    else
-                    {
-                        XtraMessageBox.Show("Recuperar Password y/o Confirmar Password no pueden estar sin Datos");
-                    }
                 }
             }
         }
@@ -133,41 +95,17 @@ namespace Agro_IntelliTrace
         {
             if (e.KeyValue == 13 && txtPass.Text != string.Empty)
             {
-                if (btnAcceso.Text == "Acceso")
-                {
-                    btnAcceso.Focus();
-                }
-                else
-                {
-                    txtRecPass.Focus();
-                }
-            }
-        }
-
-        private void txtRecPass_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyValue == 13 && txtRecPass.Text != string.Empty)
-            {
-                txtConfimPass.Focus();
-            }
-
-        }
-
-        private void txtConfimPass_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyValue == 13 && txtConfimPass.Text != string.Empty)
-            {
                 btnAcceso.Focus();
             }
         }
-
+        
         private void Frm_Login_Load(object sender, EventArgs e)
         {
             cERecordarContrasenia.Enabled = habilitado;
             if (habilitado == true)
             {
                 MSRegistro RegOut = new MSRegistro();
-                txtUser.Text=RegOut.GetSetting("Avotrace", "Login", "Email");
+                txtUser.Text=RegOut.GetSetting("Agro_IntelliTrace", "Login", "Email");
                 cERecordarContrasenia.Checked=true;
             }
             txtUser.Focus();

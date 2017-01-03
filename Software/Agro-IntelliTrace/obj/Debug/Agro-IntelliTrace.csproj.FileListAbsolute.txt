@@ -93,3 +93,4 @@ C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\es\DevExpress.XtraNavBar.v15.1.resources.dll
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\ja\DevExpress.XtraNavBar.v15.1.resources.dll
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\ru\DevExpress.XtraNavBar.v15.1.resources.dll
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\obj\Debug\Agro_IntelliTrace.Frm_Login.resources
