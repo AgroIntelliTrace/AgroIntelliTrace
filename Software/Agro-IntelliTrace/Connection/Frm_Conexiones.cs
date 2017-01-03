@@ -176,6 +176,7 @@ namespace Agro_IntelliTrace
                     frm.Instancia = txtServer.Text;
                     frm.User = txtLogin.Text;
                     frm.Pass = txtPassword.Text;
+                    frm.ShowDialog();
                     txtDB.Text = frm.CadenaBaseDatos;
                 }
                 else
@@ -193,7 +194,5 @@ namespace Agro_IntelliTrace
                 txtServer.Text = frm.CadenaServer;
             }
         }
-
-        
     }
 }

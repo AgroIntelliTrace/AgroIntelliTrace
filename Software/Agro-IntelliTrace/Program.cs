@@ -16,7 +16,7 @@ namespace Agro_IntelliTrace
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Conexiones());
+            Application.Run(new FrmPrincipal());
         }
     }
 }

@@ -85,3 +85,5 @@ C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\obj\Debug\Agro-IntelliTrace.exe.licenses
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\obj\Debug\Agro-IntelliTrace.exe
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\obj\Debug\Agro-IntelliTrace.pdb
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\obj\Debug\Agro_IntelliTrace.FrmPrincipal.resources
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\DevExpress.BonusSkins.v15.1.dll

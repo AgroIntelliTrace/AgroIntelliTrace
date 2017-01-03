@@ -13,7 +13,7 @@ namespace CapadeDatos
     
     class ConexionSQL
     {
-        const string NombreProyecto = "AvoTrace";
+        const string NombreProyecto = "Agro_IntelliTrace";
         static public string LeerConexion()
         {
             try 
