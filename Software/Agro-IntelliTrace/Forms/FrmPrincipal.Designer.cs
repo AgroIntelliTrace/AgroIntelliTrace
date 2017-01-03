@@ -107,7 +107,7 @@
             this.ribbon.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.True;
             this.ribbon.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.True;
             this.ribbon.ShowFullScreenButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbon.Size = new System.Drawing.Size(921, 147);
+            this.ribbon.Size = new System.Drawing.Size(921, 145);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // skinRibbonGalleryBarItem1
@@ -230,10 +230,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 417);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 416);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(921, 32);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(921, 33);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -242,7 +242,7 @@
             // SkinForm
             // 
             this.SkinForm.EnableBonusSkins = true;
-            this.SkinForm.LookAndFeel.SkinName = "Office 2010 Black";
+            this.SkinForm.LookAndFeel.SkinName = "VS2010";
             // 
             // navBarControl1
             // 
@@ -266,11 +266,11 @@
             this.navBarItem13,
             this.navBarItem14,
             this.navBarItem15});
-            this.navBarControl1.Location = new System.Drawing.Point(0, 147);
+            this.navBarControl1.Location = new System.Drawing.Point(0, 145);
             this.navBarControl1.Name = "navBarControl1";
             this.navBarControl1.OptionsNavPane.ExpandedWidth = 198;
             this.navBarControl1.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl1.Size = new System.Drawing.Size(198, 270);
+            this.navBarControl1.Size = new System.Drawing.Size(198, 271);
             this.navBarControl1.TabIndex = 3;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -296,7 +296,7 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem14),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem15)});
             this.navBarGroup1.Name = "navBarGroup1";
-            this.navBarGroup1.TopVisibleLinkIndex = 11;
+            this.navBarGroup1.TopVisibleLinkIndex = 10;
             // 
             // navBarItem1
             // 

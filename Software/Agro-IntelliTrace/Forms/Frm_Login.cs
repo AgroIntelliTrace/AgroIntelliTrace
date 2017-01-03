@@ -8,9 +8,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using CapaDatosAvotrace;
+using CapadeDatos;
 
-namespace AvoTrace
+namespace Agro_IntelliTrace
 {
     public partial class Frm_Login : DevExpress.XtraEditors.XtraForm
     {
