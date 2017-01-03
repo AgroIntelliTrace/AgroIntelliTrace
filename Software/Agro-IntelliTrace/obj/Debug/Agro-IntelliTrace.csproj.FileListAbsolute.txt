@@ -87,3 +87,9 @@ C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\obj\Debug\Agro-IntelliTrace.pdb
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\obj\Debug\Agro_IntelliTrace.FrmPrincipal.resources
 C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\DevExpress.BonusSkins.v15.1.dll
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\DevExpress.XtraNavBar.v15.1.dll
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\DevExpress.XtraNavBar.v15.1.xml
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\de\DevExpress.XtraNavBar.v15.1.resources.dll
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\es\DevExpress.XtraNavBar.v15.1.resources.dll
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\ja\DevExpress.XtraNavBar.v15.1.resources.dll
+C:\Users\SYSTEMSLAP\Documents\GitHub\AgroIntelliTrace\Software\Agro-IntelliTrace\bin\Debug\ru\DevExpress.XtraNavBar.v15.1.resources.dll
